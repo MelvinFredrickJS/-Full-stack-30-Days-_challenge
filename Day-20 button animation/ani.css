@@ -1,0 +1,57 @@
+body{
+    background-color: blueviolet;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.b{
+    background-color: red;
+    border: none;
+    color:white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    font-size: 22px;
+    line-height: 1em;
+    margin: 15px 40px;
+    outline: none;
+    padding: 12px 40px 10px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+.b::before,.b::after{
+    border-color: transparent;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: " ";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+.b::before{
+    border-color:lawngreen;
+    border-top-width:2px;
+    left:0px;
+    top:-5px;
+}
+.b::after{
+    border-bottom-width: 2px;
+    border-color: darkgrey;
+    bottom: -5px;
+    right: 0;
+}
+.b:hover,.b:hover{
+
+    background-color: cornflowerblue;
+}
+.b:hover::before,b.hover::before,.b:hover::after,b.hover::after{
+    height: 100%;
+    width: 100%;
+    
+}
